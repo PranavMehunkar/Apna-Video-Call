@@ -1,54 +1,126 @@
-<h1>Apna Video Call Project Installation Guide</h1>
-This guide will walk you through the installation process for the Apna Video Call project. Follow the steps below to set up the project locally on your machine.
+<h1>Apna Video Call</h1>
+<h2>Overview</h2>
+This is a full-stack video conferencing app inspired by Zoom, designed to provide users with a seamless and efficient experience. This project leverages modern technologies and is scalable, flexible, and designed for real-world use cases.
 
-<h2>Prerequisites</h2>
-Before you begin, make sure you have the following installed on your system:
+<h2>Table of Contents</h2>
+<li>Overview</li>
+<li>Tech Stack</li>
+<li>Features</li>
+<li>Installation</li>
+<li>Usage</li>
+<li>Testing</li>
+<li>Deployment</li>
+<li>License</li>
+<h2>Tech Stack</h2>
+<h3>Frontend</h3>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Bootstrap</li>
+<li>Material UI</li>
+<h3>Backend</h3>
+<li>Node.js</li>
+<li>Express.js</li>
+<h3>Database</h3>
+<li>MongoDB</li>
+<h3>Testing</h3>
+<li>Jest</li>
+<h3>Deployment</h3>
+<li>Render</li>
+<h3>Development Tools</h3>
+<li>Visual Studio Code</li>
+<li>Node.js</li>
+<li>Git</li>
+<li>GitHub</li>
+<h3>Features</h3>
+<li>User-friendly interface.</li>
+<li>Secure authentication and user management.</li>
+<li>Integration with APIs.</li>
+<li>Responsive design for mobile and desktop users.</li>
+<li>Robust backend.</li>
+<li>Data storage with MongoDB for user portfolios, history, and more.</li>
+<li>Continuous deployment on Render.</li>
+<h2>Installation</h2>
+To run Apna Video Call locally, follow these steps:
 
-Node.js (version 18 recommended)
-MongoDB
-Nodemon (installed globally)
-<h2>Installation Steps</h2>
-1. Clone the Apna Video Call repository from GitHub:
+<h3>1. Clone the repository:</h3>
 
-git clone https://github.com/PranavMehunkar/Apna-Video-Call.git
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>git clone https://github.com/yourusername/ApnaVideoCall.git</code></pre>
+</div>
 
-2. Set up the database:
+<h3>2. Navigate to the project directory:</h3>
 
-Create a .env file in the root directory of the project.
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>cd ApnaVideoCall</code></pre>
+</div>
 
-Add the following line to the .env file:
+<h3>3. Install the dependencies for both the frontend and backend:</h3>
 
-ATLASDB_URL=mongodb://127.0.0.1:27017/ApnaVideoCall
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>npm install</code></pre>
+</div>
+<h3>4. Set up environment variables:</h3>
 
-3. Set up Cloudinary:
+Create a .env file in the root directory and configure the following variables:
 
-Go to Cloudinary and sign up for a free account.
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>MONGO_URI=&lt;your_mongodb_uri&gt;</code></pre>
+</div>
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>PORT=5000</code></pre>
+</div>
 
-Once logged in, obtain your Cloudinary CLOUD_NAME, CLOUD_API_KEY, and CLOUD_API_SECRET.
+<h3>5. Run the development server:</h3>
 
-Add these values to the .env file:
+For the backend:
 
-CLOUD_NAME=your_cloud_name
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>npm run server</code></pre>
+</div>
+For the frontend:
 
-CLOUD_API_KEY=your_api_key
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>npm run client</code></pre>
+</div>
+<h3>6. Open your browser and navigate to:</h3>
 
-CLOUD_API_SECRET=your_api_secret
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>http://localhost:3000</code></pre>
+</div>
+<h2>Usage</h2>
+Once the application is running, you can:
 
-4. Set the secret for your Cloudinary storage:
+<h3><li>Sign up / Login:</h3>Create an account or log in to your existing account.</li>
+<h3><li>Create Meeting:</h3> Create the meeting.</li>
+<h3><li>Screen Share:</h3> Share your screen.</li>
+<h3><li>View History:</h3> Check your history.</li>
+<h2>Testing</h2>
+Apna Video Call uses Jest for unit testing.
 
-Add a SECRET key to your .env file and set it to a secure value:
+To run the tests, use the following command:
 
-SECRET=your_cloudinary_secret
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>npm run test</code></pre>
+</div>
+<h2>Deployment</h2>
+Apna Video Call is deployed on Render. For deployment, ensure you have the Render CLI configured and use the following commands to deploy the application:
 
-5. Install project dependencies using npm:
+<div class="bg-light p-3 rounded border">
+  <pre class="mb-0">
+    <code>npm run deploy</code></pre>
+</div>
+Ensure your Render credentials and services are properly set up for deployment.
 
-npm install
-
-6. Run the application:
-
-npm start
-
-7. Access the project:
-
-Once the server is running, you can access the project at http://localhost:3000.
-That's it! You have successfully installed and set up the Apna Video Call project on your local machine. If you encounter any issues during the installation process, feel free to reach out for assistance.
+<h2>License</h2>
+All rights reserved.
